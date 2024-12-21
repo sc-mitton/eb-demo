@@ -18,14 +18,15 @@ from django.urls import path
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.response import Response
+from .tasks import dummy_beat
 
 
 class HelloView(APIView):
     def get(self, request):
-        return Response(data={"Hello": "World"},
-                        status=status.HTTP_200_OK)
+        dummy_beat.delay()
+        return Response(status=status.HTTP_200_OK)
 
 
 urlpatterns = [
-    path('hello/', HelloView.as_view())
+    path('dummy/', HelloView.as_view())
 ]
