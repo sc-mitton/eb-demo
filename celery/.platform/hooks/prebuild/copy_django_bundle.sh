@@ -4,7 +4,7 @@
 
 # Variables
 BUCKET_NAME="elasticbeanstalk-us-west-2-905418323334"
-BUCKET_PATH="app"
+BUCKET_PATH="eb-demo"
 LOCAL_DIR="/var/app/staging"
 TEMP_DIR="/tmp/latest_deploy"
 AWS_CLI=$(which aws)

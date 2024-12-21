@@ -1,6 +1,7 @@
 branch-defaults:
   default:
-    environment: null
+    environment: celery-worker-demo
+    group_suffix: demo
 global:
   application_name: eb-demo
   branch: null

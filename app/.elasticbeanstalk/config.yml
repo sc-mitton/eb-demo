@@ -1,7 +1,7 @@
 branch-defaults:
   default:
-    environment: null
-    group_suffix: null
+    environment: app-demo
+    group_suffix: demo
 global:
   application_name: eb-demo
   branch: null
