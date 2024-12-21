@@ -1,0 +1,2 @@
+celery_beat: /var/app/venv/staging-LQM1lest/bin/celery -A app beat -l info
+celery_worker: /var/app/venv/staging-LQM1lest/bin/celery -A app worker -l info --concurrency=1

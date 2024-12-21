@@ -1,0 +1,1 @@
+web: /var/app/venv/staging-LQM1lest/bin/gunicorn --bind :8000 --workers $(($(nproc --all) * 2 + 1)) --threads 20 app.wsgi:application
